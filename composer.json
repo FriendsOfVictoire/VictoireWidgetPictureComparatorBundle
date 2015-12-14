@@ -1,0 +1,24 @@
+{
+    "name": "friendsofvictoire/picturecomparator-widget",
+    "type": "symfony-bundle",
+    "description": "Victoire PictureComparator widget",
+    "keywords": ["victoire", "PictureComparator", "widget"],
+    "homepage": "http://victoire.io",
+    "license": "MIT",
+    "require": {
+        "php"                      : ">=5.3.3",
+        "symfony/framework-bundle" : "~2.3",
+        "victoire/victoire"        : "~1.3.0"
+    },
+    "autoload": {
+        "psr-0": { "Victoire\\Widget\\PictureComparatorBundle": "" }
+    },
+    "authors"          : [
+        {
+            "name" : "Leny BERNARD",
+            "email": "leny@appventus.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "target-dir": "Victoire/Widget/PictureComparatorBundle"
+}
