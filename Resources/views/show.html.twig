@@ -1,0 +1,17 @@
+{% extends 'VictoireCoreBundle:Widget:show.html.twig' %}
+
+{% block content %}
+
+    <figure class="vic-image-container">
+        <img src="{{ leftPicture.url }}" alt="{{ leftPictureLabel }}">
+        <span class="vic-image-label" data-type="original">{{ leftPictureLabel }}</span>
+
+        <div class="vic-resize-img"> <!-- the resizable image on top -->
+            <img src="{{ rightPicture.url }}" alt="{{ rightPictureLabel }}">
+            <span class="vic-image-label" data-type="modified">{{ rightPictureLabel }}</span>
+        </div>
+
+        <span class="vic-handle"></span> <!-- slider handle -->
+    </figure> <!-- vic-image-container -->
+
+{% endblock content %}

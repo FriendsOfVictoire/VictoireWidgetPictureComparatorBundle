@@ -1,0 +1,11 @@
+victoire_core:
+    widgets:
+        PictureComparator:
+            class: "Victoire\\Widget\\PictureComparatorBundle\\Entity\\WidgetPictureComparator"
+            name: PictureComparator
+            
+jms_translation:
+    configs:
+        victoire_picturecomparator_bundle:
+            dirs: ["@VictoirePictureComparatorBundle"]
+            output_dir: "@VictoirePictureComparatorBundle/Resources/translations"

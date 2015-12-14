@@ -1,0 +1,13 @@
+{
+    "require_all":
+    {
+        "stylesheets":
+        {
+            "head": "@VictoireWidgetPictureComparatorBundle/Resources/css/pictureComparator.css"
+        },
+        "javascripts":
+        {
+            "head": "@VictoireWidgetPictureComparatorBundle/Resources/js/pictureComparator.js"
+        }
+    }
+}

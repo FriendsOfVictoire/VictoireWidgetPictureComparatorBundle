@@ -1,0 +1,15 @@
+services:
+    victoire_core.widget_picturecomparator_content_resolver:
+        parent: victoire_widget.base_widget_content_resolver
+        tags:
+            - { name: victoire_widget.widget_content_resolver, alias: PictureComparator }
+
+    #entity alias
+    victoire.widget.picturecomparator:
+        class: Victoire\Widget\PictureComparatorBundle\Entity\WidgetPictureComparator
+
+    #form alias
+    victoire.widget.form.picturecomparator:
+        class: Victoire\Widget\PictureComparatorBundle\Form\WidgetPictureComparatorType
+        tags:
+            - { name: form.type , alias: victoire_widget_form_picturecomparator }
