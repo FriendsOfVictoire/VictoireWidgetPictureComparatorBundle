@@ -1,4 +1,5 @@
 <?php
+
 namespace Victoire\Widget\PictureComparatorBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
@@ -7,7 +8,7 @@ use Victoire\Bundle\MediaBundle\Entity\Media;
 use Victoire\Bundle\WidgetBundle\Entity\Widget;
 
 /**
- * WidgetPictureComparator
+ * WidgetPictureComparator.
  *
  * @ORM\Table("vic_widget_picturecomparator")
  * @ORM\Entity
@@ -50,9 +51,9 @@ class WidgetPictureComparator extends Widget
 
     /**
      * To String function
-     * Used in render choices type (Especially in VictoireWidgetRenderBundle)
+     * Used in render choices type (Especially in VictoireWidgetRenderBundle).
      *
-     * @return String
+     * @return string
      */
     public function __toString()
     {
