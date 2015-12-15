@@ -38,6 +38,34 @@
         <source>widget_picturecomparator.form.rightPicture.heading</source>
         <target>Image de droite</target>
       </trans-unit>
+      <trans-unit id="9" resname="widget_picturecomparator.form.initialOffset.label">
+        <source>widget_picturecomparator.form.initialOffset.label</source>
+        <target>Positionnement initial du délimiteur (De 1 à 100)</target>
+      </trans-unit>
+      <trans-unit id="10" resname="widget_picturecomparator.form.orientation.label">
+        <source>widget_picturecomparator.form.orientation.label</source>
+        <target>Orientation</target>
+      </trans-unit>
+      <trans-unit id="11" resname="widget_picturecomparator.form.orientation.choice.horizontal">
+        <source>widget_picturecomparator.form.orientation.choice.horizontal</source>
+        <target>Horizontal</target>
+      </trans-unit>
+      <trans-unit id="12" resname="widget_picturecomparator.form.orientation.choice.vertical">
+        <source>widget_picturecomparator.form.orientation.choice.vertical</source>
+        <target>Vertical</target>
+      </trans-unit>
+      <trans-unit id="13" resname="widget_picturecomparator.leftPictureLabel.default">
+        <source>widget_picturecomparator.leftPictureLabel.default</source>
+        <target>Avant</target>
+      </trans-unit>
+      <trans-unit id="14" resname="widget_picturecomparator.rightPictureLabel.default">
+        <source>widget_picturecomparator.rightPictureLabel.default</source>
+        <target>Après</target>
+      </trans-unit>
+      <trans-unit id="15" resname="widget_picturecomparator.form.global.heading">
+        <source>widget_picturecomparator.form.global.heading</source>
+        <target>Général</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

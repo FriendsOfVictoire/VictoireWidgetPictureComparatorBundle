@@ -2,16 +2,9 @@
 
 {% block content %}
 
-    <figure class="vic-image-container">
-        <img src="{{ rightPicture.url }}" alt="{{ rightPictureLabel }}">
-        <span class="vic-image-label" data-type="original">{{ rightPictureLabel }}</span>
-
-        <div class="vic-resize-img"> <!-- the resizable image on top -->
-            <img src="{{ leftPicture.url }}" alt="{{ leftPictureLabel }}">
-            <span class="vic-image-label" data-type="modified">{{ leftPictureLabel }}</span>
-        </div>
-
-        <span class="vic-handle"></span> <!-- slider handle -->
-    </figure> <!-- vic-image-container -->
+    <div id="container1" class='twentytwenty-container' data-orientation="{{ orientation }}" data-initialOffset="{{ initialOffset }}" data-before-label="{{ leftPictureLabel|default('widget_picturecomparator.leftPictureLabel.default')|trans({}, 'victoire') }}" data-after-label="{{ rightPictureLabel|default('widget_picturecomparator.rightPictureLabel.default')|trans({}, 'victoire') }}">
+        <img src="{{ leftPicture.url }}" alt="{{ leftPictureLabel }}"/>
+        <img src="{{ rightPicture.url }}" alt="{{ rightPictureLabel }}"/>
+    </div>
 
 {% endblock content %}

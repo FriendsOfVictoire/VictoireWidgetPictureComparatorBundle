@@ -50,6 +50,20 @@ class WidgetPictureComparator extends Widget
     protected $rightPictureLabel;
 
     /**
+     * @var string
+     *
+     * @ORM\Column(name="orientation", type="string", length=55, nullable=true)
+     */
+    protected $orientation;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="initialOffset", type="integer", nullable=true)
+     */
+    protected $initialOffset = 50;
+
+    /**
      * To String function
      * Used in render choices type (Especially in VictoireWidgetRenderBundle).
      *
@@ -122,5 +136,37 @@ class WidgetPictureComparator extends Widget
     public function setRightPictureLabel($rightPictureLabel)
     {
         $this->rightPictureLabel = $rightPictureLabel;
+    }
+
+    /**
+     * @return string
+     */
+    public function getOrientation()
+    {
+        return $this->orientation;
+    }
+
+    /**
+     * @param string $orientation
+     */
+    public function setOrientation($orientation)
+    {
+        $this->orientation = $orientation;
+    }
+
+    /**
+     * @return string
+     */
+    public function getInitialOffset()
+    {
+        return $this->initialOffset;
+    }
+
+    /**
+     * @param string $initialOffset
+     */
+    public function setInitialOffset($initialOffset)
+    {
+        $this->initialOffset = $initialOffset;
     }
 }

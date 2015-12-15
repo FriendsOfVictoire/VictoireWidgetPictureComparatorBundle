@@ -26,12 +26,32 @@ class WidgetPictureComparatorType extends WidgetType
             ])
             ->add('leftPictureLabel', null, [
                 'label' => 'widget_picturecomparator.form.leftPictureLabel.label',
+                'attr'  => [
+                    'placeholder' => 'widget_picturecomparator.leftPictureLabel.default'
+                ]
             ])
             ->add('rightPicture', 'media', [
                 'label' => 'widget_picturecomparator.form.rightPicture.label',
             ])
             ->add('rightPictureLabel', null, [
                 'label' => 'widget_picturecomparator.form.rightPictureLabel.label',
+                'attr'  => [
+                    'placeholder' => 'widget_picturecomparator.rightPictureLabel.default'
+                ]
+            ])
+            ->add('initialOffset', 'integer', [
+                'label'      => 'widget_picturecomparator.form.initialOffset.label',
+                'attr' => [
+                    'min' => '0',
+                    'max' => '100',
+                ]
+            ])
+            ->add('orientation', 'choice', [
+                'label'   => 'widget_picturecomparator.form.orientation.label',
+                'choices' => [
+                    'horizontal' => 'widget_picturecomparator.form.orientation.choice.horizontal',
+                    'vertical'   => 'widget_picturecomparator.form.orientation.choice.vertical'
+                ]
             ]);
         parent::buildForm($builder, $options);
     }

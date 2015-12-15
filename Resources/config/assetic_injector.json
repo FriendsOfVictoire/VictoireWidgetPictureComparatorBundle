@@ -3,11 +3,15 @@
     {
         "stylesheets":
         {
-            "head": "@VictoireWidgetPictureComparatorBundle/Resources/css/pictureComparator.css"
+            "head": "@VictoireWidgetPictureComparatorBundle/Resources/vendor/twentytwenty/css/twentytwenty.css"
         },
         "javascripts":
         {
-            "head": "@VictoireWidgetPictureComparatorBundle/Resources/js/pictureComparator.js"
+            "head": [
+                "@VictoireWidgetPictureComparatorBundle/Resources/vendor/twentytwenty/js/jquery.event.move.js",
+                "@VictoireWidgetPictureComparatorBundle/Resources/vendor/twentytwenty/js/jquery.twentytwenty.js",
+                "@VictoireWidgetPictureComparatorBundle/Resources/js/pictureComparator.js"
+            ]
         }
     }
 }

@@ -3,7 +3,7 @@ Victoire PictureComparator Bundle
 
 ##What is the purpose of this bundle
 
-This bundle implements the [codyhouse picture comparison slider] (https://codyhouse.co/gem/css-jquery-image-comparison-slider/)
+This bundle implements the [zurb twentytwenty picture comparison slider] (http://zurb.com/playground/twentytwenty)
 
 ##Set Up Victoire
 

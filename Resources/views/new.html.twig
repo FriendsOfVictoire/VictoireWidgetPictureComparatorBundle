@@ -6,14 +6,19 @@
     {{ form_start(form) }}
 
     <div class="vic-row">
-        <div class="vic-col-sm-6">
+        <div class="vic-col-sm-4">
+            <h4 class="vic-h4">{{ 'widget_picturecomparator.form.global.heading'|trans }}</h4>
+            {{ form_row(form.orientation) }}
+            {{ form_row(form.initialOffset) }}
+        </div>
+        <div class="vic-col-sm-4">
             <h4 class="vic-h4">{{ 'widget_picturecomparator.form.leftPicture.heading'|trans }}</h4>
             {{ form_widget(form.leftPicture) }}
             {{ form_errors(form.leftPicture) }}
             <br/><br/>
             {{ form_row(form.leftPictureLabel) }}
         </div>
-        <div class="vic-col-sm-6">
+        <div class="vic-col-sm-4">
             <h4 class="vic-h4">{{ 'widget_picturecomparator.form.rightPicture.heading'|trans }}</h4>
             {{ form_widget(form.rightPicture) }}
             {{ form_errors(form.rightPicture) }}
