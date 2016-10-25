@@ -5,6 +5,7 @@ namespace Victoire\Widget\PictureComparatorBundle\Form;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 use Victoire\Bundle\CoreBundle\Form\WidgetType;
+use Victoire\Bundle\MediaBundle\Form\Type\MediaType;
 
 /**
  * WidgetPictureComparator form type.
@@ -21,7 +22,7 @@ class WidgetPictureComparatorType extends WidgetType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('leftPicture', 'media', [
+            ->add('leftPicture', MediaType::class, [
                 'label' => 'widget_picturecomparator.form.leftPicture.label',
             ])
             ->add('leftPictureLabel', null, [
@@ -30,7 +31,7 @@ class WidgetPictureComparatorType extends WidgetType
                     'placeholder' => 'widget_picturecomparator.leftPictureLabel.default',
                 ],
             ])
-            ->add('rightPicture', 'media', [
+            ->add('rightPicture', MediaType::class, [
                 'label' => 'widget_picturecomparator.form.rightPicture.label',
             ])
             ->add('rightPictureLabel', null, [
