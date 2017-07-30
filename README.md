@@ -5,7 +5,7 @@ Victoire PictureComparator Bundle
 
 This bundle implements the [zurb twentytwenty picture comparison slider] (http://zurb.com/playground/twentytwenty)
 
-##Set Up Victoire
+## Set Up Victoire
 
 If you haven't already, you can follow the steps to set up Victoire *[here](https://github.com/Victoire/victoire/blob/master/setup.md)*
 
