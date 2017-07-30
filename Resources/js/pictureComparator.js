@@ -1,5 +1,5 @@
 jQuery(document).ready(function($){
-    $(".vic-widget-picturecomparator .twentytwenty-container").each(function() {
+    $(".v-widget--picturecomparator .twentytwenty-container").each(function() {
         var orientation = 'horizontal';
         var initialOffset = 0.5;
         var beforeLabel = "Before";
@@ -18,7 +18,7 @@ jQuery(document).ready(function($){
             afterLabel = $(this).attr('data-after-label');
         }
 
-        $(this).twentytwenty({
+        $vic(this).twentytwenty({
             'orientation': orientation,
             'default_offset_pct': initialOffset,
             'before_label': beforeLabel,
