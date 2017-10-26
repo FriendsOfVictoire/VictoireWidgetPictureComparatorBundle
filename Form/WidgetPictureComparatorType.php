@@ -6,6 +6,8 @@ use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 use Victoire\Bundle\CoreBundle\Form\WidgetType;
 use Victoire\Bundle\MediaBundle\Form\Type\MediaType;
+use Symfony\Component\Form\Extension\Core\Type\IntegerType;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 
 /**
  * WidgetPictureComparator form type.
@@ -40,14 +42,14 @@ class WidgetPictureComparatorType extends WidgetType
                     'placeholder' => 'widget_picturecomparator.rightPictureLabel.default',
                 ],
             ])
-            ->add('initialOffset', 'integer', [
+            ->add('initialOffset', IntegerType::class, [
                 'label'      => 'widget_picturecomparator.form.initialOffset.label',
                 'attr'       => [
                     'min' => '0',
                     'max' => '100',
                 ],
             ])
-            ->add('orientation', 'choice', [
+            ->add('orientation', ChoiceType::class, [
                 'label'   => 'widget_picturecomparator.form.orientation.label',
                 'choices' => [
                     'horizontal' => 'widget_picturecomparator.form.orientation.choice.horizontal',
