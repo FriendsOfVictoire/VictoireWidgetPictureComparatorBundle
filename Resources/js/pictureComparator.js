@@ -18,7 +18,7 @@ jQuery(document).ready(function($){
             afterLabel = $(this).attr('data-after-label');
         }
 
-        $vic(this).twentytwenty({
+        $(this).twentytwenty({
             'orientation': orientation,
             'default_offset_pct': initialOffset,
             'before_label': beforeLabel,
