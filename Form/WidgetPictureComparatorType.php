@@ -51,9 +51,10 @@ class WidgetPictureComparatorType extends WidgetType
             ])
             ->add('orientation', ChoiceType::class, [
                 'label'   => 'widget_picturecomparator.form.orientation.label',
+                'choices_as_values' => true,
                 'choices' => [
-                    'horizontal' => 'widget_picturecomparator.form.orientation.choice.horizontal',
-                    'vertical'   => 'widget_picturecomparator.form.orientation.choice.vertical',
+                    'widget_picturecomparator.form.orientation.choice.horizontal' => 'horizontal',
+                    'widget_picturecomparator.form.orientation.choice.vertical' => 'vertical',
                 ],
             ]);
         parent::buildForm($builder, $options);
